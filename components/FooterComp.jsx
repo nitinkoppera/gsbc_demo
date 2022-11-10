@@ -81,10 +81,10 @@ function FooterComp({props}) {
             <div className="footer-container">
                 <div className='h-full'>
                     <div className='h-10 m-2'>
-                        <Image className='h-full' src='/images/logo_img.png' alt='img' />
+                        <img className='h-full' src='/images/logo_img.png' alt='img' />
                     </div>
                     <div className='h-10 m-2'>
-                        <Image className='h-full' src='/images/whakapapa-logo.png' alt='img' />
+                        <img className='h-full' src='/images/whakapapa-logo.png' alt='img' />
                     </div>
                 </div>
                 <div className="other-links-div flex-1 " style={{maxHeight:'200px'}}>

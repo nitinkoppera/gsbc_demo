@@ -75,17 +75,19 @@ function HeaderCompNew({shouldVisible}) {
 
                 <div className="header-left logo-div">
                     <div className='h-10'>
-                        <Image
+                        <img
                             className='h-full '
                             src='./images/logo_img.png'
                             alt='img'
+
                         />
                     </div>
                     <div className='h-8 pl-2'>
-                        <Image
+                        <img
                             className='h-full '
                             src='./images/logo_name.png'
                             alt='img'
+
                         />
                     </div>
                 </div>
