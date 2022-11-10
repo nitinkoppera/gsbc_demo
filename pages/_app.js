@@ -22,6 +22,7 @@ function MyApp({ Component, pageProps }) {
 	return <>
 		<Head>
 			<title>GS Boxing Club</title>
+			<link rel="icon" href="./images/logo_img.png"></link>
 			<meta name="viewport" content="initial-scale=1.0, width=device-width" />
 		</Head>
 		{headerVisible&&<HeaderCompNew elementsVisible={elementsVisible}/>}

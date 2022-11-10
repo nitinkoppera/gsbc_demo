@@ -49,7 +49,7 @@ function Supportus({setIsVisible,setIsWhakapapa}) {
                     </div>
                     <div className='supportUs-right'>
                         <div className='supportUs-img-div'>
-                            <Image className='supportUs-img' src='/images/upi.jpeg' alt='img' />
+                            <img className='supportUs-img' src='/images/upi.jpeg' alt='img' />
                         </div>
                     </div>
                 </div>

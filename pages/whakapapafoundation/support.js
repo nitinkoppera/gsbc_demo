@@ -29,14 +29,14 @@ function Support({setHeaderVisible}) {
                                 {/* 3449
                                 8534 */}
                                 <div>
-                                    <Image className='whakapapa-logo' src="/images/whakapapa-logo.png" alt="logo" />
+                                    <img className='whakapapa-logo' src="/images/whakapapa-logo.png" alt="logo" />
                                 </div>
                             </div>
                             <div style={{width:'100%'}}>
                                 <span style={{width:'100%', overflow:'hidden'}} >
                                     {/* 3449
                                     8534 */}
-                                    <Image style={{width:'100%'}} src="/images/support-img.png" alt="support-img" />
+                                    <img style={{width:'100%'}} src="/images/support-img.png" alt="support-img" />
                                 </span>
                             </div>
                 <div className='supportUs-div'>
@@ -75,7 +75,7 @@ function Support({setHeaderVisible}) {
                     </div>
                     <div className='supportUs-right'>
                         <div className='supportUs-img-div'>
-                            <Image className='supportUs-img' alt='upi-scanner' src='/images/upi.jpeg' />
+                            <img className='supportUs-img' alt='upi-scanner' src='/images/upi.jpeg' />
                         </div>
                     </div>
                 </div>
