@@ -1,0 +1,429 @@
+:root {
+    --primary-color: rgb(7, 53, 7);
+    --secondary-color: rgb(255, 255, 255);
+}  /* border: 10px solid black; */
+
+.ach-arrow-section{
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* position: absolute; */
+    /* width: 100%; */
+    width: 100%; /* width of the achivement div + width of the arrow div */
+    /* height: 400px; */
+    padding: 20px;
+    z-index: 1;
+    
+    overflow: hidden;
+    /* padding: 0px 130px; */
+    /* border: 2px solid red; */
+}
+.ach-left-arrow-div{
+    height: 100%;
+    width: 130px;
+    /* left: 0; */
+    margin-left: 10px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    /* border: 2px solid red; */
+}
+.ach-right-arrow-div{
+    height: 100%;
+    width: 130px;
+    /* right: 0; */
+    margin-right: 10px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    /* border: 5px solid red; */
+}
+.ach-left-arrow,.ach-right-arrow{
+    position: absolute;
+    /* transform: translate(0px,-50%); */
+    top: calc(50% - 10px);
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    cursor: pointer;
+    /* padding: 10px; */
+    border: 2px solid black;
+    /* border-radius: 50%; */
+    background-color: black;
+}
+.ach-left-arrow svg,.ach-right-arrow svg{
+    height: 30px;
+    width: 30px;
+}
+.ach-left-arrow:hover,.ach-right-arrow:hover{
+    /* background-color: rgba(161, 159, 159, 0.466); */
+}
+
+
+
+
+
+
+
+/* Slideshow */
+
+.achievementshow {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    height: 100%;
+    margin: 0 ;
+    overflow: hidden;
+    position: relative;
+    padding-top: var(--header-desktop-height);
+
+    padding: 80px 0px;
+    overflow: hidden;
+    /* border: 10px solid black; */
+    /* border: 5px solid blue; */
+}
+.achievementshow-heading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    padding: 0px 0px 30px 0px ;
+    
+    font-family: 'heading';
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 700;
+    letter-spacing: 0em;
+}
+.achievement-div{
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+
+    width: 100%;
+    width: 1050px;
+    height: max-content;
+    height: 400px;
+    /* padding: 0px 20%; */
+    overflow: hidden;
+    z-index: 1;
+    /* position: relative; */
+    /* border: 1px solid green; */
+}
+.achievementshowSlider {
+    display: flex;
+    /* justify-self: center; */
+    align-self: center;
+
+    /* position: relative; */
+    /* width: 100%; */
+    /* width: 900px; */
+    height: 400px;
+    /* padding-left: 5%; */
+    white-space: nowrap;
+    /* transition: ease 1000ms; */
+    /* background-color: black; */
+    /* border: 10px solid red; */
+    padding-left: 360px;/* achievement width + padding-left width */
+}
+  
+.achievement {
+    display: flex;
+    justify-self: center;
+    align-self: center;
+
+    /* width: 30%; */
+    width: 350px;
+    height: 350px;
+    /* height: 100%; */
+    overflow: hidden;
+    /* width: 350px; */
+    /* padding: 20px; */
+    padding: 20px 20px;
+    /* border: 2px solid pink; */
+    /* transition: ease 1000ms; */
+}
+.achievement-element:hover{
+    border: 3px solid #1167B1;
+}
+.achievement-active{
+    /* width: 400px;
+    height: 400px !important;
+    padding: 20px 20px; */
+    /* border: 3px solid red; */
+}
+.achievement-element{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    transform: ease 20000ms;
+    border: 3px solid transparent;
+    /* border: 10px solid black; */
+}
+.achievement-element-img{
+    flex: 2;
+    height: 100%;
+    /* width: 100%; */
+    overflow: hidden;
+    /* border: 1px solid black; */
+}
+.achievement-element-caption{
+    flex: 1;
+    width: 100%;
+    padding: 20px;
+    overflow: hidden;
+
+    font-size: 20px;
+
+    white-space: pre-wrap;
+    color: white;
+    background-color: #1167B1;
+}
+.achievement-element img{
+    /* height: auto; */
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    /* border: 2px solid red; */
+}
+
+.achievement-modal-container{
+    position: fixed;
+
+    height: 500px;
+    width: 900px;
+
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    /* top: 50%;
+    right: 50%;
+    transform: translate(50%,-50%); */
+    z-index: 9999;
+
+    /* border: 2px solid red; */
+    background-color: rgba(0, 0, 0, 0.887);
+}
+.achievement-modal-element{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* border: 20px solid blue; */
+}
+.achievement-modal-element-caption{
+    color: white;
+    font-size: 20px;
+    padding: 50px 30px 30px 30px;
+    /* border: 2px solid blue; */
+}
+.achievement-modal-element-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    object-fit: cover;
+    /* width: 700px; */
+    overflow: hidden;
+    /* border: 2px solid blue; */
+}
+.achievement-modal-element-img img{
+    height: 100%;
+}
+.achievement-modal-arrow-section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    position: absolute;
+    width: 100%;
+    padding: 0px 50px;
+    /* border: 2px solid white; */
+}
+.achievement-modal-left-arrow{
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+}
+.achievement-modal-right-arrow{
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+}
+.achievement-modal-close{
+    cursor: pointer;
+    position: fixed;
+    top: 20px;
+    right: 30px;
+}
+
+
+
+/* For Mobile version */
+@media only screen and (max-width: 600px){
+    .achievementshow{
+        padding-top: var(--header-mb-height);
+        padding: 0;
+        padding-bottom: 50px;
+    }
+    .achievement-div{
+        height: 300px;
+        overflow: hidden;
+    }
+    .arrow-div{
+        display: none;
+    }
+    .achievementshow-heading{
+        font-size: 35px;
+    }
+    .achievementshowSlider {
+        padding-left: 0px;
+        z-index: 1;
+    }
+    .achievement{
+        /* border: 2px solid black; */
+    }
+    .achievement-active{
+        width: 350px;
+        height: 350px !important;
+        padding: 20px 50px;
+        /* border: 1px solid red; */
+    }
+    .achievement-element{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        overflow: hidden;
+    }
+    .achievement-element img{
+        /* width: 100%; */
+        height: 250px;
+    }
+    .achievement-element-img{
+        flex: 4;
+        height: 100%;
+        /* width: 100%; */
+        overflow: hidden;
+        /* border: 1px solid black; */
+    }
+    .achievement-element-caption{
+        flex: 1;
+        width: 100%;
+        padding: 15px;
+        overflow: hidden;
+    
+        font-size: 18px;
+    
+        white-space: pre-wrap;
+        color: white;
+        background-color: #1167B1;
+    }
+    .achievement-modal-container{
+        position: fixed;
+    
+        height: 500px;
+        width: 900px;
+    
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        /* top: 50%;
+        right: 50%;
+        transform: translate(50%,-50%); */
+        z-index: 10;
+
+    
+        /* border: 2px solid red; */
+        background-color: rgba(0, 0, 0, 0.887);
+    }
+    .achievement-modal-element-div{
+        height: 100%;
+        /* border: 2px solid red; */
+    }
+    .achievement-modal-div{
+        height: 100%;
+        /* border: 2px solid white; */
+
+    }
+    .achievement-modal-element{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        /* border: 2px solid blue; */
+    }
+    .achievement-modal-element-caption{
+        color: white;
+        font-size: 20px;
+        height: 60px;
+        /* margin-top: -90px; */
+        padding: 0px 30px 30px 30px;
+        /* border: 2px solid blue; */
+    }
+    .achievement-modal-element-img{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 300px;
+        object-fit: cover;
+        /* padding: 0 200px; */
+        width: 85%;
+        overflow: hidden;
+        /* border: 2px solid blue; */
+    }
+    .achievement-modal-element-img img{
+        height: 100%;
+    }
+    .achievement-modal-arrow-section{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    
+        position: absolute;
+        width: 100%;
+        padding: 0px 0px;
+        transform: translate(0px,30px);
+        /* border: 2px solid white; */
+    }
+    .ach-arrow-section{
+        /* z-index: 100; */
+        padding: 0;
+    }
+    .ach-left-arrow-div,.ach-right-arrow-div{
+        z-index: 100;
+        width: auto;
+        padding: 0 10px;
+    }
+    .achievement-modal-left-arrow{
+        cursor: pointer;
+        border: none;
+        background-color: transparent;
+    }
+    .achievement-modal-right-arrow{
+        cursor: pointer;
+        border: none;
+        background-color: transparent;
+    }
+    .achievement-modal-close{
+        cursor: pointer;
+        position: fixed;
+        top: 20px;
+        right: 30px;
+    }
+}
