@@ -51,7 +51,7 @@ function SliderComponent({ intersectionRef }) {
             {images.map((item) => (
                 <div className="slide" key={item.id}>
                     <div className="slide-element">
-                        <Image src={item.src}  alt={item.alt} />
+                        <img src={item.src}  alt={item.alt} />
                     </div>
                 </div>
             ))}

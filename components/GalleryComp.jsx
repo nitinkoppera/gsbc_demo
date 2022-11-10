@@ -78,7 +78,7 @@ function GalleryComp({intersectionRef}) {
                             transition: transitionTime
                             }} >
                             <div className="gallery-element">
-                                <Image src={item.src}  alt={item.alt} />
+                                <img src={item.src}  alt={item.alt} />
                             </div>
                         </div>
                     ))}

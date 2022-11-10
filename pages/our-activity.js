@@ -51,10 +51,10 @@ function OurActivity(props) {
                 </div>
                 <div className='flex justify-center items-center'>
                     <div className='h-60 w-80 px-3 overflow-hidden'>
-                        <Image className='object-cover border w-full' src={images1[1].src} alt='img' />
+                        <img className='object-cover border w-full' src={images1[1].src} alt='img' />
                     </div>
                     <div className='h-60 w-80 px-3 overflow-hidden'>
-                        <Image className='object-cover border w-full' src={images1[1].src} alt='img' />
+                        <img className='object-cover border w-full' src={images1[1].src} alt='img' />
                     </div>
                 </div>
             </div>)}

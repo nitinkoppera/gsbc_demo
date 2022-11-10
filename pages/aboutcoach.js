@@ -9,8 +9,8 @@ function aboutcoach(props) {
         <div>
             <div className='aboutus-container-1'>
                 <div className='aboutus-img-div grid grid-cols-2 gap-1 p-1'>
-                    <div className='flex justify-center items-center overflow-hidden'><Image src={images1[3].src} alt="" /></div>
-                    <div className='flex justify-center items-center overflow-hidden'><Image src={images1[4].src} alt="" /></div>
+                    <div className='flex justify-center items-center overflow-hidden'><img src={images1[3].src} alt="" /></div>
+                    <div className='flex justify-center items-center overflow-hidden'><img src={images1[4].src} alt="" /></div>
                 </div>
             </div>
             <div className='aboutus-container-2'>

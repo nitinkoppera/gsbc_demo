@@ -192,7 +192,7 @@ function useWindowSize() {
                                         }} 
                                 >
                                     <div className="achievement-element-img">
-                                        <Image src={item.src}  alt={item.alt} />
+                                        <img src={item.src}  alt={item.alt} />
                                     </div>
                                     <div className="achievement-element-caption">
                                         <span>{item.caption}</span>
@@ -241,7 +241,7 @@ function useWindowSize() {
                                     <span>{item.caption}</span>
                                 </div>
                                 <div ref={ref2} className="achievement-modal-element-img">
-                                    <Image src={item.src}  alt={item.alt} />
+                                    <img src={item.src}  alt={item.alt} />
                                 </div>
                                 <div className="achievement-modal-arrow-section">
                                     <div ref={ref3} className="achievement-modal-left-arrow-div">

@@ -47,8 +47,8 @@ function HeaderComp({isVisible,setIsVisible}) {
 
                 <div className="header-left ">
                     <div className='logo-div'>
-                        <Image src="/images/logo_img.png" style={{height: '40px',width: '45.95744705200195px'}} alt="" />
-                        <Image src="/images/logo_name.png" style={{height: '29.787233352661133px',width: '118.00326538085938px'}} alt="" />
+                        <img src="/images/logo_img.png" style={{height: '40px',width: '45.95744705200195px'}} alt="" />
+                        <img src="/images/logo_name.png" style={{height: '29.787233352661133px',width: '118.00326538085938px'}} alt="" />
                     </div>
 
                 </div>
