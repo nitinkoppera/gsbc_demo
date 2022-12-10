@@ -11,7 +11,7 @@ function Aboutus(props) {
     return (
         <div ref={ref} className='aboutus-page'>
             <div className='aboutus-container-1'>
-                <div className='aboutus-img-div grid grid-cols-2 gap-1 p-1'>
+                <div className='aboutus-img-div grid grid-cols-2 grid-rows-2 gap-1 p-1'>
                     <div className='flex justify-center items-center overflow-hidden'><img src={images1[1].src} alt="" /></div>
                     <div className='flex justify-center items-center overflow-hidden'><img src={images1[2].src} alt="" /></div>
                     <div className='flex justify-center items-center overflow-hidden'><img src={images1[3].src} alt="" /></div>
@@ -20,7 +20,7 @@ function Aboutus(props) {
             </div>
             <div className='aboutus-container-2'>
                 <div className='aboutus-heading'>
-                    <span>ABOUT GS BOXING CLUB</span>
+                    <span className='text-5xl mobile:text-4xl'>ABOUT GS BOXING CLUB</span>
                 </div>
                 <div className='aboutus-content'>
                     <div className='w-full pt-7'>
@@ -36,7 +36,7 @@ function Aboutus(props) {
                         Dy Mayor Ramanathan Salai, Chintadripet, 
                         Chennai, Tamil Nadu, India - 600002
                     </i>
-                    <div className='my-5' style={{border:`2px solid grey`,height:'30vw'}}>
+                    <div className='my-5' style={{border:`2px solid grey`,height:'max(30vh,30vw)'}}>
                         <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d971.5790832859528!2d80.2693272!3d13.0791273!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x5cb67aa5890e4d9b!2sGS%20Boxing%20Club!5e0!3m2!1sen!2sin!4v1643463817434!5m2!1sen!2sin"
                             title='Location'
                             width="100%" 

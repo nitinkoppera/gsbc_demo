@@ -8,13 +8,13 @@ function aboutWhakapapa(props) {
     return (
         <div>
             <div className='aboutus-container-1'>
-                <div className='aboutus-img-div'>
-                    <Image src={images1[1].src} alt="" />
+                <div className='aboutus-img-div flex'>
+                    <img className='' src='./images/WhakapapaFoundation/1.jpg' alt="" />
                 </div>
             </div>
             <div className='aboutus-container-2'>
                 <div className='aboutus-heading'>
-                    <span>ABOUT WHAKAPAPA</span>
+                    <span className='text-5xl mobile:text-4xl'>ABOUT WHAKAPAPA</span>
                 </div>
                 <div className='aboutus-content'>
                     <div className='w-full pt-7'>

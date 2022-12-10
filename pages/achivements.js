@@ -64,7 +64,7 @@ function Achivements(props) {
         <div ref={ref} className='aboutus-page'>
             <div className='aboutus-container-2'>
                 <div className='aboutus-heading'>
-                    <span>Achivements</span>
+                    <span className='text-5xl mobile:text-4xl'>Achivements</span>
                 </div>
             </div>
             <div className='aboutus-container-2'>
@@ -142,7 +142,7 @@ function Achivements(props) {
             </div>
             <div className='aboutus-container-2'>
                 <div className='aboutus-sub-heading'>
-                    <span>All India Universit</span>
+                    <span>All India University</span>
                 </div>
                 <ul className='list-disc'>
                 {allIndiaUniversity.map((achivement,i) => <li key={i}><div className='w-full pt-2'>

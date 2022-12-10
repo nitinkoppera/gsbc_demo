@@ -51,7 +51,7 @@ function SponsorAKid(props) {
     return (
         <div ref={ref} className='aboutus-page'>
             <div className='aboutus-container-1'>
-                <div className='aboutus-img-div grid grid-cols-2 gap-1 p-1'>
+                <div className='aboutus-img-div grid grid-cols-2 grid-rows-2 gap-1 p-1'>
                     <div className='flex justify-center items-center overflow-hidden'><img src={images1[1].src} alt="" /></div>
                     <div className='flex justify-center items-center overflow-hidden'><img src={images1[2].src} alt="" /></div>
                     <div className='flex justify-center items-center overflow-hidden'><img src={images1[3].src} alt="" /></div>
@@ -60,7 +60,7 @@ function SponsorAKid(props) {
             </div>
             <div className='aboutus-container-2'>
                 <div className='aboutus-heading'>
-                    <span>SOPONSOR A KID</span>
+                    <span className='text-5xl mobile:text-4xl'>SPONSOR A KID</span>
                 </div>
                 <div className='aboutus-content'>
                     <div className='w-full pt-7'>

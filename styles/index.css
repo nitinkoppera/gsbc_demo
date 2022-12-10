@@ -1,3 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
 :root {
   --blue-shade: #1167B1;
   --red-shade: #E40D26;
@@ -124,9 +129,6 @@ a{
       padding: 20px 20px;
   }
 }
-.footer-container a{
-  color: white;
-}
 .footer-container{
   height: 50px;
   width: 100%;
@@ -145,7 +147,7 @@ a{
   height: 100%;
   /* flex-grow: 1; */
   padding: 10px;
-  display: flex;
+  /* display: flex; */
   flex-direction: column;
   flex-wrap: wrap;
 }

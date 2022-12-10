@@ -11,13 +11,13 @@ import AchievementComp from '../components/AchievementComp'
 export default function Home({}) {
   return (
     <div>
-      <HeaderCompNew/>
+      {/* <HeaderCompNew/> */}
       {/* <MainComp/> */}
       {/* <SliderComponent />
       <GalleryComp />
-      <AchievementComp />
-      <ContactComp/> */}
-      <FooterComp/>
+      <AchievementComp /> */}
+      <ContactComp/>
+      {/* <FooterComp/> */}
       
     </div>
   )

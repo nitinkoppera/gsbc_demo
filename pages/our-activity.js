@@ -39,7 +39,7 @@ function OurActivity(props) {
         <div ref={ref} className='aboutus-page'>
             <div className='aboutus-container-2'>
                 <div className='aboutus-heading'>
-                    <span>Our Activity</span>
+                    <span className='text-5xl mobile:text-4xl'>Our Activity</span>
                 </div>
             </div>
             {activities.map((activity,i) =><div key={i} className='aboutus-container-2'>
@@ -49,7 +49,7 @@ function OurActivity(props) {
                 <div className='w-full pt-2'>
                 {activity.content}
                 </div>
-                <div className='flex justify-center items-center'>
+                <div className='flex justify-center items-center mobile:flex-col'>
                     <div className='h-60 w-80 px-3 overflow-hidden'>
                         <img className='object-cover border w-full' src={images1[1].src} alt='img' />
                     </div>

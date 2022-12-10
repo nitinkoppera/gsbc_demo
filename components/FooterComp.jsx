@@ -53,6 +53,34 @@ function FooterComp({props}) {
             title: "Link whatever it is",
             url: "#home"
         },
+        {
+            title: "Link whatever it is",
+            url: "#home"
+        },
+        {
+            title: "Link whatever it is",
+            url: "#home"
+        },
+        {
+            title: "Link whatever it is",
+            url: "#home"
+        },
+        {
+            title: "Link whatever it is",
+            url: "#home"
+        },
+        {
+            title: "Link whatever it is",
+            url: "#home"
+        },
+        {
+            title: "Link whatever it is",
+            url: "#home"
+        },
+        {
+            title: "Link whatever it is",
+            url: "#home"
+        },
     ]
     const socialLinks= [
         {
@@ -77,31 +105,37 @@ function FooterComp({props}) {
     // const blue_shade = "rgb(7, 53, 7)"
     
     return (
-        <div className="footer bg-black">
-            <div className="footer-container">
-                <div className='h-full'>
-                    <div className='h-10 m-2'>
+        <div className="footer border-t-2 border-black bg-white">
+            <div className="footer-container mobile:h-fit">
+                {/* both  */}
+                {/* logos */}
+                <div className='h-full  w-2/8'>
+                    <div className='h-10 mobile:h-7 m-2'>
                         <img className='h-full' src='/images/logo_img.png' alt='img' />
                     </div>
-                    <div className='h-10 m-2'>
+                    <div className='h-10 mobile:h-7 m-2'>
                         <img className='h-full' src='/images/whakapapa-logo.png' alt='img' />
                     </div>
                 </div>
-                <div className="other-links-div flex-1 " style={{maxHeight:'200px'}}>
+                {/* desktop */}
+                {/* footer links */}
+                <div className="other-links-div flex flex-1 mobile:hidden" style={{minHeight:'200px'}}>
                     {footerLinks.map( (link,i) => (
                         <div key={i} className="other">
-                            <a href={link.url} target="_blank" rel='noreferrer'><span>{link.title}</span></a>
+                            <a className=' text-black' href={link.url} target="_blank" rel='noreferrer'><span>{link.title}</span></a>
                         </div>
                     ) )}
                 </div>
-                <div className="social-links-div w-2/5">
+                {/* both */}
+                {/* social links */}
+                <div className="social-links-div w-2/5 mobile:w-fit ">
                     <div className='pb-4'>
-                        <div>
-                            <input className='h-7 text-white px-2 align-middle ' placeholder='Enter email' />
-                            <button className='h-7 text-white px-2 align-middle border'>Submit</button>
+                        <div className='flex'>
+                            <input className='h-7 text-black px-2 align-middle bg-white border border-black' placeholder='Enter email' />
+                            <button className='h-7 text-black px-2 align-middle border border-black'>Submit</button>
                         </div>
                     </div>
-                    <div className='flex justify-center'>
+                    <div className='flex justify-center mobile:hidden'>
                         {socialLinks.map((social,i) => <div key={i} className="social">
                             <a href={social.link} target="_blank" rel='noreferrer'>
                                 <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="34" height="34" viewBox="0 0 24 24" style= {{fill:blue_shade}}>
@@ -111,8 +145,29 @@ function FooterComp({props}) {
                         </div>)}
                     </div>
                 </div>
+                {/* mobile */}
+                {/* footer links */}
+                <div className='hidden mobile:flex flex-col w-full'>
+                    <div className="other-links-div flex middle:flex-row justify-around " style={{minHeight:'300px'}}>
+                        {footerLinks.map( (link,i) => (
+                            <div key={i} className="other text-black">
+                                <a className=' text-black' href={link.url} target="_blank" rel='noreferrer'><span>{link.title}</span></a>
+                            </div>
+                        ) )}
+                    </div>
+                    <div className='flex justify-center  w-full'>
+                        {socialLinks.map((social,i) => <div key={i} className="social">
+                            <a href={social.link} target="_blank" rel='noreferrer'>
+                                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="34" height="34" viewBox="0 0 24 24" style= {{fill:blue_shade}}>
+                                    <path d={social.svg}></path>
+                                </svg>
+                            </a>
+                        </div>)}
+                    </div>
+                </div>
+
             </div>
-            <div className="copy-rights text-white">
+            <div className="copy-rights text-black">
                 <span>G.S. Bloxing Club © 2022</span>
             </div>
         </div>

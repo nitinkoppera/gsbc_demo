@@ -2,7 +2,6 @@ const images = [
     {
       id: 0,
       src: './images/slideImage-1.jpg',
-      // src: images1['aboutUs-bg-1.jpg'],
       alt: "Laptop"
     },
     {

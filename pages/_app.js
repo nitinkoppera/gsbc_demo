@@ -1,8 +1,8 @@
+import '../styles/globals.css'
 import Head from 'next/head'
 import FooterComp from '../components/FooterComp'
 // import HeaderComp from '../components/HeaderComp'
 import HeaderCompNew from '../components/HeaderCompNew'
-import '../styles/globals.css'
 
 import '../styles/index_new.css'
 import '../styles/aboutus_page.css'
@@ -17,7 +17,7 @@ import { useState } from 'react'
 
 
 function MyApp({ Component, pageProps }) {
-	const [elementsVisible,setElementsVisible] = useState(false);
+	const [elementsVisible,setElementsVisible] = useState(true);
 	const [headerVisible,setHeaderVisible] = useState(true);
 	return <>
 		<Head>

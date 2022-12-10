@@ -6,8 +6,7 @@ import logo_name from '../public/images/logo_name.png'
 import logo_img from '../public/images/logo_img.png'
 import Image from 'next/image';
 
-function HeaderCompNew({shouldVisible}) {
-    
+function HeaderCompNew({elementsVisible}) {
     const [ sideNavWidth,setSideNavWidth ] = useState("0px");
     const [ sideNavpadd,setSideNavpadd ] = useState(" 20px 0px 40px 0px ")
 
@@ -44,32 +43,23 @@ function HeaderCompNew({shouldVisible}) {
                 <div className="closebtn-div">
                     <span className="closebtn" onClick={() =>{ setSideNavWidth("0px");setSideNavpadd(" 20px 0px 40px 0px ") }}>&times;</span>
                 </div>
-                <li>
-                    <Link href="/whakapapafoundation/support">
-                        <span className="element" style={{display:"flex",justifyContent:"center",alignContent:"center",fontWeight:'400',fontSize:'18px'}}>
-                            {/* <span style={{paddingRight:"5px"}}><FaDirections style={{width:"20px", height:"20px",alignSelf:"center"}}/></span> */}
-                            <span>Donate</span>
-                        </span>
-                    </Link> 
-                </li>
-                <li><a href="tel:+91-80721-76232">
-                    <span className="element" style={{display:"flex",alignContent:"center"}}>
-                        <span style={{paddingRight:"5px"}}><IoMdCall style={{width:"20px", height:"20px",alignSelf:"center"}}/></span>
-                        <span>Call Now</span>
-                    </span>
-                </a></li>
-                <li><a href="https://goo.gl/maps/b4PMSYJ518D9r66e6">
-                    <span style={{display:"flex",alignContent:"center"}}>
-                        <span style={{paddingRight:"5px"}}><FaDirections style={{width:"20px", height:"20px",alignSelf:"center"}}/></span>
-                        <span>Get Directions</span>
-                    </span>
-                </a></li>
+                <div className='text-left'>
+                    {elementsVisible && headerElements.map((element,i) => {
+                        return <Link key={i} href={element.link} passHref>
+                            <span className="element" style={{display:"flex",justifyContent:"left",alignContent:"center",fontWeight:'400',fontSize:'18px'}}>
+                                <span>{element.title}</span>
+                            </span>
+                        </Link> 
+                    })}
+                </div>
 
             </div>
-            <div className="header bg-black ">
+            <div className="header bg-white ">
                 <div className="menu-btn-div">
-                    <span onClick={() =>{ setSideNavWidth("200px");setSideNavpadd(" 20px 20px 40px 40px ") }}>
-                        <svg fill="rgb(7, 53, 7)" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24" width="24px" height="24px"><path d="M 2 5 L 2 7 L 22 7 L 22 5 L 2 5 z M 2 11 L 2 13 L 22 13 L 22 11 L 2 11 z M 2 17 L 2 19 L 22 19 L 22 17 L 2 17 z"/></svg>
+                    <span onClick={() =>{ setSideNavWidth("60vw");setSideNavpadd(" 20px 20px 40px 40px ") }}>
+                        <svg fill="black" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24" width="24px" height="24px">
+                            <path d="M 2 5 L 2 7 L 22 7 L 22 5 L 2 5 z M 2 11 L 2 13 L 22 13 L 22 11 L 2 11 z M 2 17 L 2 19 L 22 19 L 22 17 L 2 17 z"/>
+                        </svg>
                     </span>
                 </div>
 
@@ -93,12 +83,12 @@ function HeaderCompNew({shouldVisible}) {
                 </div>
                 <div className="header-middle"></div>
                 <div className="header-right">
-                    {shouldVisible && headerElements.map((element,i) => {
+                    {elementsVisible && headerElements.map((element,i) => {
                         return <div key={i} className="element-div">
                             <Link href={element.link} passHref>
-                                <span className="element" style={{display:"flex",justifyContent:"center",alignContent:"center",fontWeight:'400',fontSize:'16px'}}>
-                                    <span>{element.title}</span>
-                                </span>
+                                <div className="element text-black" style={{display:"flex",justifyContent:"center",alignContent:"center",fontWeight:'400',fontSize:'2.5vh'}}>
+                                    <p className='flex justify-center items-center '>{element.title}</p>
+                                </div>
                             </Link> 
                         </div>
                     })}

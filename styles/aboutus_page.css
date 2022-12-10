@@ -6,7 +6,7 @@
     justify-content: center;
     align-items: center; */
 
-    height: 450px;
+    max-height: 70vh;
 
     overflow: hidden;
 }
@@ -18,8 +18,8 @@
     padding: 20px 90px;
 }
 .aboutus-heading{
-    padding-top: 10px;
-    font-size: 48px;
+    /* padding-top: 10px;
+    font-size: 48px; */
     font-weight: 700;
 }
 .aboutus-sub-heading{
@@ -39,11 +39,11 @@
         padding: 0px;
     }
     .aboutus-img-div{
-        display: flex;
+        /* display: flex;
         justify-content: center;
-        align-items: center;
+        align-items: center; */
 
-        height: 300px;
+        max-height: 40vh;
         /* border: 3px solid red; */
 
         overflow: hidden;
@@ -59,8 +59,8 @@
         /* border: 3px solid red; */
     }
     .aboutus-heading{
-        padding-top: 10px;
-        font-size: 48px;
+        /* padding-top: 10px;
+        font-size: 48px; */
         font-weight: 700;
     }
     .aboutus-sub-heading{

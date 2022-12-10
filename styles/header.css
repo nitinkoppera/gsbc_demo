@@ -18,12 +18,12 @@
 
   height: 65px;
   /* color: var(--blue-shade); */
-  background-color: black;
+  /* background-color: black; */
 
   position: fixed;
   width: 100%;
   z-index: 5;
-  box-shadow: 0px -20px 50px black;
+  /* box-shadow: 0px -20px 50px black; */
 
   padding-bottom: var(--header-mobile-height);
   /* border: 2px solid red; */
@@ -187,9 +187,9 @@
     border-bottom: 5px solid transparent;
     cursor: pointer;
     text-decoration: none;
-    color: white;
   }
   .element-active{
+    border-top: 5px solid transparent;
     border-bottom: 5px solid red;
   }
 
@@ -197,9 +197,11 @@
     align-self: center;
   }
   .element:hover{
+    border-top: 5px solid transparent;
     border-bottom: 5px solid red;
   }
   .element:focus-within{
+    border-top: 5px solid transparent;
     border-bottom: 5px solid red;
   }
 
