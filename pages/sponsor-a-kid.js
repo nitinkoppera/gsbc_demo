@@ -74,7 +74,7 @@ function SponsorAKid(props) {
                         The estimated expenses for a year to sponsor a kid are as follows:
                         </b>
                     </div>
-                    <div className='overflow-scroll'>
+                    <div className='overflow-x-scroll'>
                     <div className=' w-3/4 mobile:w-auto grid grid-cols-6 gap-0.5 p-0.5 bg-black' style={{minWidth:'800px'}}>
                         <div className='w-full  px-3 bg-white ' style={{minWidth:'150px'}}>
                             <span>Expense Type</span>
