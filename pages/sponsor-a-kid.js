@@ -74,43 +74,45 @@ function SponsorAKid(props) {
                         The estimated expenses for a year to sponsor a kid are as follows:
                         </b>
                     </div>
-                    <div className=' w-3/4 grid grid-cols-6 gap-0.5 p-0.5 bg-black'>
-                        <div className='w-full px-3 bg-white '>
+                    <div className='overflow-scroll'>
+                    <div className=' w-3/4 mobile:w-auto grid grid-cols-6 gap-0.5 p-0.5 bg-black' style={{minWidth:'800px'}}>
+                        <div className='w-full  px-3 bg-white ' style={{minWidth:'150px'}}>
                             <span>Expense Type</span>
                         </div>
-                        <div className='w-full px-3 bg-white '>
+                        <div className='w-full  px-3 bg-white ' style={{minWidth:'150px'}}>
                             <span>Per Annum</span>
                         </div>
-                        <div className='w-full px-3 bg-white '>
+                        <div className='w-full  px-3 bg-white ' style={{minWidth:'150px'}}>
                             <span>Per Month</span>
                         </div>
-                        <div className='w-full px-3 bg-white col-span-3 '>
+                        <div className='w-full  px-3 bg-white col-span-3 ' style={{minWidth:'150px'}}>
                             <span>What it covers?</span>
                         </div>
                         {expenses.map((expense) => {
                             const divs = [];
                             divs.push(
-                                <div className='w-full px-3 bg-white '>
+                                <div className='w-full px-3 bg-white  'style={{minWidth:'50px'}}>
                                     <span>{expense.type}</span>
                                 </div>
                             )
                             divs.push(
-                                <div className='w-full px-3 bg-white '>
+                                <div className='w-full px-3 bg-white  'style={{minWidth:'50px'}}>
                                     <span>{expense.perAnnum}</span>
                                 </div>
                             )
                             divs.push(
-                                <div className='w-full px-3 bg-white '>
+                                <div className='w-full px-3 bg-white  'style={{minWidth:'50px'}}>
                                     <span>{expense.perMonth}</span>
                                 </div>
                             )
                             divs.push(
-                                <div className='w-full px-3 bg-white col-span-3 '>
+                                <div className='w-full px-3 bg-white  col-span-3 'style={{minWidth:'50px'}}>
                                     <span>{expense.covers}</span>
                                 </div>
                             )
                             return divs
                         })}
+                    </div>
                     </div>
                     <div className='w-full pt-7'>
                         We request you to please <a href='/contactUs'>contact us</a> if you&apos;d like to sponsor a kid fully or partially.
