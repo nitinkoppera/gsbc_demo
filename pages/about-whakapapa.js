@@ -1,7 +1,7 @@
 import Head from 'next/head';
 import Image from 'next/image';
 import React from 'react';
-import images1 from '../public/ImageSlideshow';
+import images from '../public/images/about-whakapapa';
 
 
 function aboutWhakapapa(props) {
@@ -9,7 +9,7 @@ function aboutWhakapapa(props) {
         <div>
             <div className='aboutus-container-1'>
                 <div className='aboutus-img-div flex'>
-                    <img className='' src='./images/WhakapapaFoundation/1.jpg' alt="" />
+                    <img className='' src={images[0].src} alt="" />
                 </div>
             </div>
             <div className='aboutus-container-2'>
@@ -32,8 +32,13 @@ function aboutWhakapapa(props) {
                 <div className='aboutus-sub-heading'>
                     <span>Our Cause</span>
                 </div>
-                <div className='w-full pt-2'>
-                    Together with GS Boxing Club we are helping children from underprivileged backgrounds to get better opportunities at life through this sport of Amateur Boxing. We aim to ensure that these kids get better employment and higher education opportunities through the sports quota while leading a disciplined athlete life free from drug and alcohol abuse. Thus we empower them to earn a livelihood for themselves through a sport that they are naturally good at. We believe that such sports-based empowerment could bring a greater change in underprivileged sections of society. We further wish to take up causes that help empower people and the planet.
+                <div className='flex mobile:flex-col w-full pt-2'>
+                    <div className='flex-1 w-full pt-2'>
+                        Together with GS Boxing Club we are helping children from underprivileged backgrounds to get better opportunities at life through this sport of Amateur Boxing. We aim to ensure that these kids get better employment and higher education opportunities through the sports quota while leading a disciplined athlete life free from drug and alcohol abuse. Thus we empower them to earn a livelihood for themselves through a sport that they are naturally good at. We believe that such sports-based empowerment could bring a greater change in underprivileged sections of society. We further wish to take up causes that help empower people and the planet.
+                    </div>
+                    <div className='flex-1 aboutus-img-div flex'>
+                        <img className='' src={images[1].src} alt="" />
+                    </div>
                 </div>
             </div>
             <div className='aboutus-container-2'>

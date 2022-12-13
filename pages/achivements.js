@@ -1,7 +1,7 @@
 import Head from 'next/head';
 import React from 'react';
 import { useRef } from 'react';
-import images1 from '../public/ImageSlideshow';
+import images from '../public/images/achievement';
 
 
 function Achivements(props) {

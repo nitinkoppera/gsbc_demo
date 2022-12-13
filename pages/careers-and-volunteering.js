@@ -1,15 +1,15 @@
 import Head from 'next/head';
 import Image from 'next/image';
 import React from 'react';
-import images1 from '../public/ImageSlideshow';
+import images from '../public/images/careers-and-volunteering';
 
 function CareersAndVolunteering(props) {
     return (
         <div>
             <div className='aboutus-container-1'>
                 <div className='aboutus-img-div grid grid-cols-2 grid-rows-1 mobile:grid-rows-2 mobile:grid-cols-1 gap-1 p-1'>
-                    <div className='flex justify-center items-center overflow-hidden'><img src={images1[3].src} alt="" /></div>
-                    <div className='flex justify-center items-center overflow-hidden'><img src={images1[4].src} alt="" /></div>
+                    <div className='flex justify-center items-center overflow-hidden'><img src={images[0].src} alt="" /></div>
+                    <div className='flex justify-center items-center overflow-hidden'><img src={images[1].src} alt="" /></div>
                 </div>
             </div>
             <div className='aboutus-container-2'>

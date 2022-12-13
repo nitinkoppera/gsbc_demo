@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import React from 'react';
+import images1 from '../public/images/contact-us';
 
 function Contact(props) {
     

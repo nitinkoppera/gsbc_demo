@@ -1,41 +1,41 @@
 import Head from 'next/head';
 import React from 'react';
 import { useRef } from 'react';
-import images1 from '../public/ImageSlideshow';
+import images from '../public/images/gallery';
 
 function gallery(props) {
     const photos = [
         {
-            url: images1[0].src
+            url: images[0].src
         },
         {
-            url: images1[1].src
+            url: images[1].src
         },
         {
-            url: images1[2].src
+            url: images[2].src
         },
         {
-            url: images1[3].src
+            url: images[3].src
         },
         {
-            url: images1[4].src
+            url: images[4].src
         },
         {
-            url: images1[5].src
+            url: images[5].src
         },
         {
-            url: images1[6].src
+            url: images[6].src
         },
         {
-            url: images1[7].src
+            url: images[7].src
         },
     ]
 
     return (
         <div style={{padding:'10vh 10vw'}}>
             <div className='flex justify-start flex-wrap'>
-                {photos.map((photo,i) =>
-                    <img key={i} className='h-36' src={photo.url} />
+                {images.map((photo,i) =>
+                    <img key={i} className='h-36' src={photo.src} />
                 )}
             </div>
         </div>
