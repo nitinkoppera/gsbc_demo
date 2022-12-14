@@ -1,6 +1,6 @@
 import Head from 'next/head';
 import React from 'react';
-import images1 from '../public/images/contact-us';
+import images from '../public/images/contact-us';
 
 function Contact(props) {
     
@@ -38,28 +38,30 @@ function Contact(props) {
         },
     ]
     return (
-        <div className='grid grid-cols-2 mobile:grid-cols-1' style={{padding:'10vh 10vw'}}>
-            <div className='flex flex-col col-span-1 border-2 border-black rounded w-full max-w-xl' style={{padding:'5vh 3vw'}}>
-                <div className='text-center text-3xl'>
-                    <span>Email Us</span>
-                </div>
-                <div className='flex-1 flex justify-evenly items-stretch'>
-                    <div className='flex flex-col w-full'>
-                        <div>
-                            <div className='w-full'>Full Name:</div>
-                            <input className='w-full mb-2 bg-transparent border-b-2 border-black' type='text' />
-                        </div>
-                        <div>
-                            <div className='w-full'>Email:</div>
-                            <input className='w-full mb-2 bg-transparent border-b-2 border-black' type='email' />
-                        </div>
-                        <div>
-                            <div className='w-full'>Subject:</div>
-                            <input className='w-full mb-2 bg-transparent border-b-2 border-black' type='text' />
-                        </div>
-                        <div className='flex-1 flex flex-col h-full'>
-                            <div className='w-full'>Message:</div>
-                            <textarea className=' flex-1 w-full mb-2 bg-transparent border-2 border-black h-full' rows="4" type='text'></textarea>
+        <div className='grid grid-cols-2 mobile:grid-cols-1' style={{padding:'10vh 10vw',}}>
+            <div className='rounded w-full max-w-xl col-span-1 bg-cover bg-center' style={{backgroundImage:'url("./images/contact-us/1.jpg")'}}>
+                <div className='h-full flex flex-col border-2 border-black rounded w-full max-w-xl backdrop-blur-sm bg-white bg-opacity-30 ' style={{padding:'5vh 3vw',}}>
+                    <div className='text-center text-3xl'>
+                        <span>Email Us</span>
+                    </div>
+                    <div className='flex-1 flex justify-evenly items-stretch'>
+                        <div className='flex flex-col w-full'>
+                            <div>
+                                <div className='w-full'>Full Name:</div>
+                                <input className='focus-visible:border-red-600 focus-visible:border-0 focus-visible:border-b-2 w-full mb-2 bg-transparent border-b-2 border-black' type='text' />
+                            </div>
+                            <div>
+                                <div className='w-full'>Email:</div>
+                                <input className='w-full mb-2 bg-transparent border-b-2 border-black' type='email' />
+                            </div>
+                            <div>
+                                <div className='w-full'>Subject:</div>
+                                <input className='w-full mb-2 bg-transparent border-b-2 border-black' type='text' />
+                            </div>
+                            <div className='flex-1 flex flex-col h-full'>
+                                <div className='w-full'>Message:</div>
+                                <textarea className=' flex-1 w-full mb-2 bg-transparent border-2 border-black h-full' rows="4" type='text'></textarea>
+                            </div>
                         </div>
                     </div>
                 </div>
